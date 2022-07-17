@@ -5,9 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VPNU_Trojan, server: vpnu.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: vpnu.loungers.cc, udp: true}
-  - {name: Blog_Trojan, server: blog.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: blog.loungers.cc, udp: true}
-  - {name: Cloud_Trojan, server: cloud.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: cloud.loungers.cc, udp: true}
+  - {name: vpnu.loungers.cc:443, server: vpnu.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: vpnu.loungers.cc, udp: true}
+  - {name: blog.loungers.cc:443, server: blog.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: blog.loungers.cc, udp: true}
+  - {name: cloud.loungers.cc:443, server: cloud.loungers.cc, port: 443, type: trojan, password: a1b2c3d4..., sni: cloud.loungers.cc, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
